@@ -6,11 +6,11 @@ plugins {
 
 android {
     namespace = "com.multrm.testkmp.android"
-    compileSdk = 35
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         applicationId = "com.multrm.testkmp.android"
-        minSdk = 26
-        targetSdk = 35
+        minSdk = libs.versions.android.minSdk.get().toInt()
+        targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
     }
@@ -37,10 +37,16 @@ android {
 }
 
 dependencies {
-    implementation(projects.sharedPresentation)
-    implementation(libs.compose.ui)
-    implementation(libs.compose.ui.tooling.preview)
-    implementation(libs.compose.material3)
+    implementation(project(":shared-presentation"))
+    implementation(project(":shared-domain"))
+    implementation(project(":shared-data"))
+
     implementation(libs.androidx.activity.compose)
-    debugImplementation(libs.compose.ui.tooling)
+
+//    implementation(projects.sharedPresentation)
+//    implementation(libs.compose.ui)
+//    implementation(libs.compose.ui.tooling.preview)
+//    implementation(libs.compose.material3)
+//    implementation(libs.androidx.activity.compose)
+//    debugImplementation(libs.compose.ui.tooling)
 }

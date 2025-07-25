@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="name">Name</string>
+    <string name="WeatherScreen_Title">Погода в городе:</string>
+    <string name="temperature">Температура</string>
+    <string name="filslike">Ощущается как</string>
+    <string name="wind">Ветер</string>
+    <string name="gustsWind">Порывы ветра</string>
+    <string name="pressure">Давление</string>
+    <string name="humidity">Влажность</string>
+    <string name="dewPoint">Точка росы</string>
+    <string name="uvIndex">Уф индекс</string>
+    <string name="direction">Направление</string>
+    <string name="c">C</string>
+    <string name="kph">Км/ч</string>
+    <string name="mbar">Мбар</string>
+    <string name="forecastTemp">%1$s..%1$s C</string>
+    <string name="HomeScreen_ChangeCity">Выберите город</string>
+    <string name="HomeScreen_NotHaveCity">Такого города в списке нет(</string>
+    <string name="ErrorText_NotFound">Не удалось найти погоду здесь(</string>
+    <string name="ErrorText_SometingWentWrong">Что-то пошло не так</string>
+    <string name="ErrorText_NoInternet">Похоже у вас проблемы с интернетом</string>
+    <string name="ErrorText_NoVPN">Похоже у вас медленный интернет или не включен VPN)</string>
+    <string name="WeatherScreen_ImHere">Я тут</string>
+    <string name="WeatherScreen_FerecastFewDays">Прогноз на несколько дней</string>
+    <string name="dir_s">Юг</string>
+    <string name="dir_w">Запад</string>
+    <string name="dir_n">Север</string>
+    <string name="dir_e">Восток</string>
+    <string name="dir_sw">Юго-запад</string>
+    <string name="dir_se">Юго-восток</string>
+    <string name="dir_nw">Северо-запад</string>
+    <string name="dir_ne">Северо-восток</string>
+    <string name="dir_ssw">Юго-юго-запад</string>
+    <string name="dir_ssn">Юго-юго-восток</string>
+    <string name="dir_wsw">Запад-юго-запад</string>
+    <string name="dir_nee">Северо-северо-восток</string>
+    <string name="dir_ene">Востоко-северо-восток</string>
+    <string name="dir_ese">Востоко-юго-восток</string>
+    <string name="dir_wnw">Западо-северо-запад</string>
+    <string name="dir_nnw">Северо-северо-запад</string>
+    <string name="unknown_dir">Неизвестное значение</string>
+    <string name="procent">%</string>
+    <string name="try_again">Попробовать снова</string>
+</resources>
