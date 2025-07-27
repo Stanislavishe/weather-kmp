@@ -1,5 +1,6 @@
 import com.android.aaptcompiler.resolvePackage
 import org.gradle.kotlin.dsl.implementation
+import org.gradle.kotlin.dsl.kotlin
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
@@ -9,6 +10,7 @@ plugins {
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.kotlin.serialization)
     id("org.jetbrains.compose") version "1.8.2"
+    id("dev.mokkery") version "2.9.0"
 }
 
 kotlin {
@@ -74,6 +76,20 @@ kotlin {
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
+
+            //mockk
+            implementation(libs.mockk)
+            implementation(libs.mockk.common)
+            implementation("dev.mokkery:mokkery-gradle:2.9.0")
+
+            //turbine
+            implementation(libs.turbine)
+
+            //test coroutines
+            implementation(libs.kotlinx.coroutines.test)
+
+            implementation(kotlin("test-common"))
+            implementation(kotlin("test-annotations-common"))
         }
         iosMain.dependencies {
 
@@ -93,8 +109,7 @@ android {
     }
 }
 dependencies {
-    add("kspCommonMainMetadata", "androidx.room:room-compiler:2.7.2")
-//    "androidMainKsp"("androidx.room:room-compiler:2.7.2")
+//    add("kspCommonMainMetadata", "androidx.room:room-compiler:2.7.2")
     with(project.extensions.getByType<org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension>()) {
         sourceSets.getByName("androidMain").dependencies {
             add("ksp", "androidx.room:room-compiler:2.7.2")

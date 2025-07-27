@@ -8,8 +8,3 @@ plugins {
     alias(libs.plugins.ksp) apply false
     alias(libs.plugins.kotlin.serialization) apply  false
 }
-//buildscript {
-//    dependencies {
-//        classpath("dev.icerock.moko:resources-generator:0.25.0")
-//    }
-//}
